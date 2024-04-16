@@ -1,0 +1,3 @@
+--module-manifest=buck-out/v2/gen/root/904931f735703749/__hello__/srcs.manifest
+--module-manifest=buck-out/v2/gen/root/904931f735703749/__hello__/extra_manifests.manifest
+--module-manifest=buck-out/v2/gen/root/904931f735703749/__hello__/manifest/startup_function_loader.manifest

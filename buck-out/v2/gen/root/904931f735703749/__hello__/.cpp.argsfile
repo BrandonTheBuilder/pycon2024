@@ -1,0 +1,10 @@
+-Xclang
+-fdebug-compilation-dir
+-Xclang
+.
+-fcolor-diagnostics
+-I/usr/include/python3.10
+-E
+-v
+"-std=c++17"
+"-stdlib=libc++"

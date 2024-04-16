@@ -1,0 +1,1 @@
+../../../../prelude/904931f735703749/python/tools/__static_extension_finder.py__/static_extension_finder.py

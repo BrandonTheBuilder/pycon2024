@@ -1,0 +1,1 @@
+--native-library-src=buck-out/v2/gen/root/904931f735703749/__hello__/hello
