@@ -1,9 +1,0 @@
-"-fuse-ld=lld-15"
--o
-buck-out/v2/gen/root/904931f735703749/__hello__/hello
-"-Wl,-rpath,\$ORIGIN/hello#link-tree/runtime/lib"
-"-Wl,-rpath,\$ORIGIN/hello#link-tree"
-buck-out/v2/gen/root/904931f735703749/__hello__/__objects__/embedded_main.cpp.o
-buck-out/v2/gen/root/904931f735703749/__hello__/__objects__/static_extension_utils.cpp.o
-buck-out/v2/gen/root/904931f735703749/__hello__/__objects__/static_extension_info.cpp.o
--lpython3.10

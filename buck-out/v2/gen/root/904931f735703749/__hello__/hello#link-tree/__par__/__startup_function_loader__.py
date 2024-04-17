@@ -1,1 +1,0 @@
-../../manifest/__startup_function_loader__.py

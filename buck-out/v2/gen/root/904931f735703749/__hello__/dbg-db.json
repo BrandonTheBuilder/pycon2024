@@ -1,7 +1,0 @@
-{
-  "sources": {
-    "hello.py": "./hello.py",
-    "__par__/bootstrap.py": "prelude/python/runtime/__par__/bootstrap.py"
-  },
-  "dependencies": {}
-}
