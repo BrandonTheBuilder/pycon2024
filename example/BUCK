@@ -3,7 +3,7 @@
 prebuilt_cxx_library(
     name = "libpython",
     header_only = True,
-    exported_preprocessor_flags = ["-I/usr/include/python3.11", "-v", "-std=c++17", "-stdlib=libc++"],
+    exported_preprocessor_flags = ["-I/usr/include/python3.11", "-v", "-std=c++17"],
     exported_linker_flags = ["-lpython3.11"],
 )
 
