@@ -1,3 +1,9 @@
 [submodule "example/prelude"]
 	path = example/prelude
 	url = https://github.com/BrandonTheBuilder/buck2-prelude.git
+[submodule "example/asv_runner"]
+	path = example/asv_runner
+	url = https://github.com/airspeed-velocity/asv_runner.git
+[submodule "example/numpy"]
+	path = example/numpy
+	url = https://github.com/numpy/numpy.git

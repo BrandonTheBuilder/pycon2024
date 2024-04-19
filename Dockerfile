@@ -7,7 +7,8 @@ RUN apt install -y python3
 RUN apt install -y python3-dev
 RUN apt install -y libc++-15-dev
 RUN apt install -y clang
-RUN apt install -y lld-15
+RUN apt install -y lld
+RUN apt install -y vim
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > rust_install.sh
 RUN chmod u+x ./rust_install.sh
 RUN ./rust_install.sh -y
