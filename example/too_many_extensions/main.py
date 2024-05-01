@@ -2,6 +2,7 @@ import time
 
 N = 1000
 
+
 def main():
     start = time.time()
     for i in range(N):

@@ -8,11 +8,10 @@ PyObject *get_message(PyObject *self, PyObject *arg) {
 
 static PyMethodDef extension_methods[] = {
     {"get_message", get_message, METH_NOARGS, "Return the message"},
-    {NULL, NULL, 0, NULL}
-};
+    {NULL, NULL, 0, NULL}};
 
 static PyModuleDef extension_module = {
-    PyModuleDef_HEAD_INIT,      "extension",  .m_size = -1,
+    PyModuleDef_HEAD_INIT,          "extension",    .m_size = -1,
     .m_methods = extension_methods, .m_free = NULL,
 };
 

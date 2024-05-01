@@ -1,6 +1,0 @@
-python_library(
-    name = "get_message",
-    srcs = ["get_message.py"],
-    visibility = ["PUBLIC"],
-)
-    

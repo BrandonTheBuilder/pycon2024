@@ -1,11 +1,11 @@
 load(":defs.bzl", "gen_targets")
 
 python_binary(
-    name = "import_test",
-    main = "main.py",
-    main_function = "too_many_extensions.main.main",
-    executable_name = "native_main",
-    native_link_strategy = "separate",
-    executable_deps = ["//:libpython"],
-    deps = gen_targets(1000),
+    name="import_test",
+    main="main.py",
+    main_function="too_many_extensions.main.main",
+    executable_name="native_main",
+    native_link_strategy="separate",
+    executable_deps=["//:libpython"],
+    deps=gen_targets(1000),
 )

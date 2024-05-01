@@ -1,5 +1,1 @@
-python_binary(
-    name = "hello",
-    main = "hello.py",
-    main_function = "hello_world.hello.main"
-)
+python_binary(name="hello", main="hello.py", main_function="hello_world.hello.main")

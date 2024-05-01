@@ -12,7 +12,7 @@ static PyMethodDef extension_methods[] = {
     {NULL, NULL, 0, NULL}};
 
 static PyModuleDef extension_module = {
-    PyModuleDef_HEAD_INIT,      "$name",  .m_size = -1,
+    PyModuleDef_HEAD_INIT,          "$name",        .m_size = -1,
     .m_methods = extension_methods, .m_free = NULL,
 };
 
