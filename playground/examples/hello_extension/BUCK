@@ -1,7 +1,14 @@
 load("@//defs.bzl", "static_linked_python_binary")
 
-static_linked_python_binary(
+python_binary(
     name="hello",
+    main="hello.py",
+    main_function="examples.hello_extension.hello.main",
+    deps=[":extension"],
+)
+
+static_linked_python_binary(
+    name="static_linked_hello",
     main="hello.py",
     main_function="examples.hello_extension.hello.main",
     deps=[":extension"],

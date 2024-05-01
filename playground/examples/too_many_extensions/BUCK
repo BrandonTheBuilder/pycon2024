@@ -1,8 +1,18 @@
+load("@//defs.bzl", "static_linked_python_binary")
 load(":defs.bzl", "gen_targets")
+
+too_many_deps = gen_targets(1000)
 
 python_binary(
     name="import_test",
     main="main.py",
     main_function="examples.too_many_extensions.main.main",
-    deps=gen_targets(1000),
+    deps=too_many_deps,
+)
+
+static_linked_python_binary(
+    name="static_linked_import_test",
+    main="main.py",
+    main_function="examples.too_many_extensions.main.main",
+    deps=too_many_deps,
 )
