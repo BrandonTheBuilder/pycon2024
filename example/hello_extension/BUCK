@@ -1,13 +1,15 @@
-python_binary(
-    name = "hello",
-    main = "hello.py",
-    main_function = "hello_extension.hello.main",
-    deps = [":extension"],
+load("@//defs.bzl", "static_linked_python_binary")
+
+static_linked_python_binary(
+    name="hello",
+    main="hello.py",
+    main_function="hello_extension.hello.main",
+    deps=[":extension"],
 )
 
 cxx_python_extension(
-    name = "extension",
-    srcs = ["extension.cpp"],
-    deps = ["root//:libpython"],
-    visibility = ["PUBLIC"],
+    name="extension",
+    srcs=["extension.cpp"],
+    deps=["root//:libpython"],
+    visibility=["PUBLIC"],
 )
