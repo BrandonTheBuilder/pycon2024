@@ -7,4 +7,4 @@ RUN apt install -y clang
 RUN apt install -y lld
 RUN apt install -y vim
 COPY playground playground
-
+WORKDIR /playground
