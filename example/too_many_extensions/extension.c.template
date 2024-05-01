@@ -1,0 +1,22 @@
+#include "Python.h"
+
+char NAME[] = "$name";
+
+PyObject *get_name(PyObject *self, PyObject *arg) {
+  PyObject *name = PyUnicode_FromString(NAME);
+  return name;
+}
+
+static PyMethodDef extension_methods[] = {
+    {"get_name", get_name, METH_O, "Return the extension name"},
+    {NULL, NULL, 0, NULL}};
+
+static PyModuleDef extension_module = {
+    PyModuleDef_HEAD_INIT,      "$name",  .m_size = -1,
+    .m_methods = extension_methods, .m_free = NULL,
+};
+
+PyMODINIT_FUNC PyInit_$name() {
+  PyObject *module = PyModule_Create(&extension_module);
+  return module;
+}

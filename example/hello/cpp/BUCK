@@ -1,0 +1,6 @@
+cxx_python_extension(
+    name = "get_message",
+    srcs = ["hello.cpp", "data.cpp"],
+    deps = ["root//:libpython"],
+    visibility = ["PUBLIC"],
+)

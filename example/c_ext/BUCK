@@ -1,0 +1,6 @@
+cxx_python_extension(
+    name = "hello",
+    srcs = ["hello.cpp"],
+    deps = ["root//:libpython"],
+    visibility = ["PUBLIC"],
+)
