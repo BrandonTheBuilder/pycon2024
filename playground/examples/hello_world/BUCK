@@ -1,0 +1,3 @@
+python_binary(
+    name="hello", main="hello.py", main_function="examples.hello_world.hello.main"
+)

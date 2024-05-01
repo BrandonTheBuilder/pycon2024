@@ -1,0 +1,8 @@
+load(":defs.bzl", "gen_targets")
+
+python_binary(
+    name="import_test",
+    main="main.py",
+    main_function="examples.too_many_extensions.main.main",
+    deps=gen_targets(1000),
+)
