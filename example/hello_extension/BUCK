@@ -1,0 +1,13 @@
+python_binary(
+    name = "hello",
+    main = "hello.py",
+    main_function = "hello_extension.hello.main",
+    deps = [":extension"],
+)
+
+cxx_python_extension(
+    name = "extension",
+    srcs = ["extension.cpp"],
+    deps = ["root//:libpython"],
+    visibility = ["PUBLIC"],
+)
