@@ -1,0 +1,25 @@
+load("@//defs.bzl", "static_linked_python_binary")
+
+cxx_binary(
+    name = "read_data_c",
+    srcs = ["read_data.c"],
+    deps = [":data"],
+)
+
+cxx_library(
+    name = "data",
+    srcs = ["data.c"],
+)
+
+cxx_python_extension(
+    name = "read_data_extension",
+    srcs = ["read_data_py.c",],
+    deps = [":data", "//:libpython"]
+)
+
+static_linked_python_binary(
+    name = "read_data_py",
+    main = "read_data.py",
+    main_function = "read_config.read_data.main",
+    deps = [":read_data_extension"],
+)
